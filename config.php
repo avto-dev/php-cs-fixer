@@ -20,7 +20,7 @@ $config = new \PhpCsFixer\Config('Avto Develops Code Style Fixer');
 return $config
     ->setFinder(PhpCsFixer\Finder::create()
         ->exclude(require __DIR__ . '/excludes.php')
-        ->in(__DIR__))
+        ->in($project_root_dir))
     ->setRiskyAllowed(true)
     ->setUsingCache(true)
     ->setCacheFile($cache_file_path)
