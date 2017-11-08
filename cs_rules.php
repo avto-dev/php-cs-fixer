@@ -10,8 +10,10 @@ return [
     '@PSR2'                                       => true,
     '@PHP71Migration'                             => true,
     'binary_operator_spaces'                      => [
-        'align_double_arrow' => true,
-        'align_equals'       => true,
+        'operators' => [
+            '='  => 'align_single_space_minimal',
+            '=>' => 'align_single_space_minimal',
+        ],
     ],
     'blank_line_after_namespace'                  => true,
     'blank_line_after_opening_tag'                => true,
