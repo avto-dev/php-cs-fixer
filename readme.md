@@ -4,13 +4,14 @@
 
 # Автоматический Code Style Fixer для PHP
 
-![Packagist](https://img.shields.io/packagist/dt/avto-dev/php-cs-fixer.svg?style=flat&maxAge=30)
+![Packagist](https://img.shields.io/packagist/v/avto-dev/php-cs-fixer.svg?style=flat&maxAge=30)
 ![GitHub issues](https://img.shields.io/github/issues/avto-dev/php-cs-fixer.svg?style=flat&maxAge=30)
+![Packagist](https://img.shields.io/packagist/dt/avto-dev/php-cs-fixer.svg?style=flat&maxAge=30)
 [![Packagist](https://img.shields.io/packagist/l/avto-dev/php-cs-fixer.svg)]()
 
 Данный пакет для `composer` позволяет запускать автоматический `Code Style Fixer` для `PHP` с фиксированным набором правил, принятых в качестве основных для оформления исходного `php` кода.
 
-## Установка с помощью `composer`
+## Установка
 
 Для установки данного пакета выполните в терминале следующую команду:
 
@@ -30,6 +31,10 @@ $ php ./vendor/bin/cs-fix
 
 Опционально можете передать свои параметры запуска. При передаче параметра `--config` - все параметры, что формирует данный пакет - будут проигнорированы, и будет произведен запуск именно с теми параметрами, что будут переданы вами.
 
+Если вам требуется опционально переопределить переопределить параметры правил fixer-а, то создайте в корне вашего приложения файл `.cs_rules.php`, возвращающий ассоциированный массив правил (более подробно о самих правилах можешь ознакомиться по [этой ссылке][vendor_fixer]). При его наличии его контент будет мерджиться с конфигом пакета, опционально перекрывая необходимые правила.
+
+Так же в корне можете разместить файл `.cs_rules.php`, содержащий пути директорий, которые следует исключить при обработке.
+
 Более подробно о работе пакета - `Look into the sources, Luke`.
 
 ## Поддержка и развитие
@@ -43,3 +48,4 @@ $ php ./vendor/bin/cs-fix
 Код данного пакета распространяется под лицензией **MIT**.
 
 [getcomposer]:https://getcomposer.org/download/
+[vendor_fixer]:https://github.com/FriendsOfPHP/PHP-CS-Fixer
