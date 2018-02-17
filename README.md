@@ -88,12 +88,11 @@ return [
 Код данного пакета распространяется под лицензией **MIT**.
 
 [badge_version]:https://img.shields.io/packagist/v/avto-dev/php-cs-fixer.svg?style=flat&maxAge=30
-[badge_license]:https://img.shields.io/packagist/l/avto-dev/php-cs-fixer.svg
+[badge_license]:https://img.shields.io/packagist/l/avto-dev/php-cs-fixer.svg?style=flat&maxAge=30
 [badge_issues]:https://img.shields.io/github/issues/avto-dev/php-cs-fixer.svg?style=flat&maxAge=30
 [badge_downloads]:https://img.shields.io/packagist/dt/avto-dev/php-cs-fixer.svg?style=flat&maxAge=30
 [link_packagist]:https://packagist.org/packages/avto-dev/php-cs-fixer
 [link_license]:https://github.com/avto-dev/php-cs-fixer/blob/master/LICENSE
 [link_issues]:https://github.com/avto-dev/php-cs-fixer/issues
-
 [getcomposer]:https://getcomposer.org/download/
 [vendor_fixer]:https://github.com/FriendsOfPHP/PHP-CS-Fixer
