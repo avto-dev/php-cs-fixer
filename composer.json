@@ -30,6 +30,6 @@
         "source": "https://github.com/avto-dev/php-cs-fixer"
     },
     "bin": [
-        "bin/cs-fix"
+        "cs-fix"
     ]
 }
