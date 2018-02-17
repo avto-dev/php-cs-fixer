@@ -1,35 +1,35 @@
 {
-  "name": "avto-dev/php-cs-fixer",
-  "description": "A tool to automatically fix PHP code style",
-  "keywords": ["codestyle", "cs", "fixer", "avto-dev"],
-  "type": "library",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Avto Develop",
-      "homepage": "https://github.com/avto-dev"
-    }
-  ],
-  "require": {
-    "php": "^5.6 || >=7.0 <7.3",
-    "symfony/console": "^3.2 || ^4.0",
-    "friendsofphp/php-cs-fixer": "^2.8",
-    "ext-json": "*",
-    "ext-tokenizer": "*",
-    "ext-mbstring": "*"
-  },
-  "require-dev": {
-    "symfony/var-dumper": "^3.3"
-  },
-  "conflict": {
-    "hhvm": "*"
-  },
-  "config": {
-    "sort-packages": true
-  },
-  "support": {
-    "issues": "https://github.com/avto-dev/php-cs-fixer/issues",
-    "source": "https://github.com/avto-dev/php-cs-fixer"
-  },
-  "bin": ["cs-fix"]
+    "name": "avto-dev/php-cs-fixer",
+    "description": "A tool to automatically fix PHP code style",
+    "keywords": [
+        "codestyle",
+        "cs",
+        "fixer",
+        "avto-dev"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Avto Develop",
+            "homepage": "https://github.com/avto-dev"
+        }
+    ],
+    "require": {
+        "php": "^5.6 || >=7.0 <7.3",
+        "friendsofphp/php-cs-fixer": "^2.8"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^3.3"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "support": {
+        "issues": "https://github.com/avto-dev/php-cs-fixer/issues",
+        "source": "https://github.com/avto-dev/php-cs-fixer"
+    },
+    "bin": [
+        "bin/cs-fix"
+    ]
 }

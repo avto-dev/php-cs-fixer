@@ -3,7 +3,7 @@
 /**
  * Excludes directories names.
  *
- * NOTE: exclude will work only for directories.
+ * NOTE: excludes will works only for directories.
  */
 return [
     'bootstrap',
