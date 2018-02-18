@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="logo" src="https://habrastorage.org/webt/z7/4w/hk/z74whki0f3xq-rbturgbak5mrpi.png" width="70" height="70" />
+  <img alt="logo" src="https://hsto.org/webt/z7/4w/hk/z74whki0f3xq-rbturgbak5mrpi.png" width="70" height="70" />
 </p>
 
 # Автоматический Code Style Fixer для PHP
@@ -16,7 +16,7 @@
 Для установки данного пакета выполните в терминале следующую команду:
 
 ```shell
-$ composer require --dev avto-dev/php-cs-fixer "^1.0"
+$ composer require --dev avto-dev/php-cs-fixer "^1.0.9"
 ```
 
 > Для этого необходим установленный `composer`. Для его установки перейдите по [данной ссылке][getcomposer].
