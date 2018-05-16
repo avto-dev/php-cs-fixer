@@ -118,5 +118,12 @@ return [
             'function',
         ],
     ],
-    'array_syntax' => ['syntax' => 'short'],
+    'array_syntax'                                => ['syntax' => 'short'],
+    'is_null'                                     => true,
+    'yoda_style'                                  => [
+        'equal'            => false,
+        'identical'        => false,
+        'less_and_greater' => false,
+    ],
+    'simplified_null_return'                      => true,
 ];
