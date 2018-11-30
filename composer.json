@@ -16,12 +16,10 @@
         }
     ],
     "require": {
-        "php": "^5.6 || >=7.0 <7.3",
+        "php": "^5.6 || >=7.0",
         "friendsofphp/php-cs-fixer": "^2.8"
     },
-    "require-dev": {
-        "symfony/var-dumper": "~3.2 || ^4.0"
-    },
+    "require-dev": {},
     "config": {
         "sort-packages": true
     },

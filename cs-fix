@@ -16,8 +16,8 @@ global $argv;
 
 // Try to disable xdebug
 try {
-    if (function_exists('xdebug_disable')) {
-        xdebug_disable();
+    if (\function_exists('xdebug_disable')) {
+        \xdebug_disable();
     }
 } catch (\Exception $e) {
     // Do nothing
@@ -26,27 +26,27 @@ try {
 }
 
 // IDK for a what - this is a copy & paste from vendor binary file
-set_error_handler(function ($severity, $message, $file, $line) {
-    if ($severity & error_reporting()) {
+\set_error_handler(function ($severity, $message, $file, $line) {
+    if ($severity & \error_reporting()) {
         throw new ErrorException($message, 0, $severity, $file, $line);
     }
 });
 
 // Require composer autoloader
-if (file_exists($autoload = __DIR__ . '/../../autoload.php')) {
+if (\file_exists($autoload = __DIR__ . '/../../autoload.php')) {
     require $autoload;
 } else {
     require __DIR__ . '/vendor/autoload.php';
 }
 
 // Detect project root directory
-$reflector        = new \ReflectionClass('\\Composer\\Autoload\\ClassLoader');
-$project_root_dir = realpath(dirname($reflector->getFileName()) . '/../../');
+$reflector        = new \ReflectionClass(\Composer\Autoload\ClassLoader::class);
+$project_root_dir = \dirname(\dirname(\dirname($reflector->getFileName()))) . '/';
 
 // Try to detect - user pass own config, or not?
 $user_config = null;
-for ($i = 0; $i <= count($argv) - 1; ++$i) {
-    if (strpos((string) $argv[$i], '--config') !== false) {
+for ($i = 0; $i <= \count($argv) - 1; ++$i) {
+    if (\strpos((string) $argv[$i], '--config') !== false) {
         $user_config = isset($argv[$j = $i + 1])
             ? $argv[$j]
             : null;
@@ -55,14 +55,14 @@ for ($i = 0; $i <= count($argv) - 1; ++$i) {
 }
 
 // Initialize input arguments object
-$input = new \Symfony\Component\Console\Input\ArgvInput(is_null($user_config)
-    ? array_merge([
+$input = new \Symfony\Component\Console\Input\ArgvInput($user_config === null
+    ? \array_merge([
         null,
         'fix',
         '--verbose',
         '--config',
         __DIR__ . '/config.php'
-    ], array_splice($argv, 1, count($argv)))
+    ], \array_splice($argv, 1, \count($argv)))
     : null
 );
 

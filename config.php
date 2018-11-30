@@ -8,14 +8,14 @@
 
 // Detect project root directory
 $reflector        = new \ReflectionClass('\\Composer\\Autoload\\ClassLoader');
-$project_root_dir = realpath(dirname($reflector->getFileName()) . '/../../');
+$project_root_dir = \dirname(\dirname(\dirname($reflector->getFileName()))) . '/';
 
-if (! empty($env_cache_file_path = getenv('PHP_CS_FIX_CACHE_FILE_PATH')) && is_string($env_cache_file_path)) {
+if (! empty($env_cache_file_path = \getenv('PHP_CS_FIX_CACHE_FILE_PATH')) && \is_string($env_cache_file_path)) {
     $cache_file_path = $env_cache_file_path;
 } else {
     $cache_file_name = '.php_cs.cache';
 
-    $cache_file_path = is_dir($project_root_dir . '/storage')
+    $cache_file_path = \is_dir($project_root_dir . '/storage')
         ? $project_root_dir . '/storage/' . $cache_file_name
         : $project_root_dir . '/' . $cache_file_name;
 }
@@ -26,14 +26,14 @@ $config   = new \PhpCsFixer\Config('Avto Develops Code Style Fixer');
 
 $config
     ->setFinder(PhpCsFixer\Finder::create()
-        ->exclude(file_exists($user_excludes = $project_root_dir . '/.cs_excludes.php')
-            ? array_replace_recursive($excludes, require $user_excludes)
+        ->exclude(\file_exists($user_excludes = $project_root_dir . '/.cs_excludes.php')
+            ? \array_replace_recursive($excludes, require $user_excludes)
             : $excludes)
         ->in($project_root_dir))
     ->setRiskyAllowed(true)
     ->setUsingCache(true)
     ->setRules(file_exists($user_rules = $project_root_dir . '/.cs_rules.php')
-        ? array_replace_recursive($rules, require $user_rules)
+        ? \array_replace_recursive($rules, require $user_rules)
         : $rules);
 
 if (! empty($cache_file_path)) {

@@ -4,22 +4,22 @@
 
 # Автоматический Code Style Fixer для PHP
 
-[![Version][badge_version]][link_packagist]
+[![Version][badge_packagist_version]][link_packagist]
+[![Version][badge_php_version]][link_packagist]
+[![Downloads count][badge_downloads_count]][link_packagist]
 [![License][badge_license]][link_license]
-[![Issues][badge_issues]][link_issues]
-[![Downloads][badge_downloads]][link_packagist]
 
 Данный пакет для `composer` позволяет запускать автоматический `Code Style Fixer` для `PHP` с фиксированным набором правил, принятых в качестве основных для оформления исходного `php` кода.
 
-## Установка
+## Install
 
-Для установки данного пакета выполните в терминале следующую команду:
+Require this package with composer using the following command:
 
 ```shell
-$ composer require --dev avto-dev/php-cs-fixer "^1.0.9"
+$ composer require avto-dev/php-cs-fixer "^1.0"
 ```
 
-> Для этого необходим установленный `composer`. Для его установки перейдите по [данной ссылке][getcomposer].
+> Installed `composer` is required ([how to install composer][getcomposer]).
 
 ## Использование
 
@@ -83,22 +83,40 @@ $ PHP_CS_FIX_CACHE_FILE_PATH=./.new.cache ./cs-fix
 
 Более подробно о работе пакета - `Look into the sources, Luke`.
 
-## Поддержка и развитие
+## Changes log
 
-Если у вас возникли какие-либо проблемы по работе с данным пакетом, пожалуйста, создайте соответствующий `issue` в данном репозитории.
+[![Release date][badge_release_date]][link_releases]
+[![Commits since latest release][badge_commits_since_release]][link_commits]
 
-Если вы способны самостоятельно реализовать тот функционал, что вам необходим - создайте PR с соответствующими изменениями. Крайне желательно сопровождать PR соответствующими тестами, фиксирующими работу ваших изменений. После проверки и принятия изменений будет опубликована новая минорная версия.
+Changes log can be [found here][link_changes_log].
 
-## Лицензирование
+## Support
 
-Код данного пакета распространяется под лицензией **MIT**.
+[![Issues][badge_issues]][link_issues]
+[![Issues][badge_pulls]][link_pulls]
 
-[badge_version]:https://img.shields.io/packagist/v/avto-dev/php-cs-fixer.svg?style=flat&maxAge=30
-[badge_license]:https://img.shields.io/packagist/l/avto-dev/php-cs-fixer.svg?style=flat&maxAge=30
-[badge_issues]:https://img.shields.io/github/issues/avto-dev/php-cs-fixer.svg?style=flat&maxAge=30
-[badge_downloads]:https://img.shields.io/packagist/dt/avto-dev/php-cs-fixer.svg?style=flat&maxAge=30
+If you will find any package errors, please, [make an issue][link_create_issue] in current repository.
+
+## License
+
+This is open-sourced software licensed under the [MIT License][link_license].
+
+[badge_packagist_version]:https://img.shields.io/packagist/v/avto-dev/php-cs-fixer.svg?maxAge=180
+[badge_php_version]:https://img.shields.io/packagist/php-v/avto-dev/php-cs-fixer.svg?longCache=true
+[badge_downloads_count]:https://img.shields.io/packagist/dt/avto-dev/php-cs-fixer.svg?maxAge=180
+[badge_license]:https://img.shields.io/packagist/l/avto-dev/php-cs-fixer.svg?longCache=true
+[badge_release_date]:https://img.shields.io/github/release-date/avto-dev/php-cs-fixer.svg?style=flat-square&maxAge=180
+[badge_commits_since_release]:https://img.shields.io/github/commits-since/avto-dev/php-cs-fixer/latest.svg?style=flat-square&maxAge=180
+[badge_issues]:https://img.shields.io/github/issues/avto-dev/php-cs-fixer.svg?style=flat-square&maxAge=180
+[badge_pulls]:https://img.shields.io/github/issues-pr/avto-dev/php-cs-fixer.svg?style=flat-square&maxAge=180
+[link_releases]:https://github.com/avto-dev/php-cs-fixer/releases
 [link_packagist]:https://packagist.org/packages/avto-dev/php-cs-fixer
-[link_license]:https://github.com/avto-dev/php-cs-fixer/blob/master/LICENSE
+[link_changes_log]:https://github.com/avto-dev/php-cs-fixer/blob/master/CHANGELOG.md
 [link_issues]:https://github.com/avto-dev/php-cs-fixer/issues
+[link_create_issue]:https://github.com/avto-dev/php-cs-fixer/issues/new/choose
+[link_commits]:https://github.com/avto-dev/php-cs-fixer/commits
+[link_pulls]:https://github.com/avto-dev/php-cs-fixer/pulls
+[link_license]:https://github.com/avto-dev/php-cs-fixer/blob/master/LICENSE
+[getcomposer]:https://getcomposer.org/download/
 [getcomposer]:https://getcomposer.org/download/
 [vendor_fixer]:https://github.com/FriendsOfPHP/PHP-CS-Fixer
