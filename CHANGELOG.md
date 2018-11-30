@@ -11,9 +11,6 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 - Maximal PHP version now is undefined
 - Issue templates updated
 
-[travis]:https://travis-ci.org/
-[codecov]:https://codecov.io/
-
 ## v1.0.11
 
 ### Added
