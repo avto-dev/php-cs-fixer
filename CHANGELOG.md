@@ -6,9 +6,9 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ## v1.0.13
 
-### Removed
+### Changes
 
-- `node_modules` folder from cs-fix
+- `node_modules` added into excludes list
 
 ## v1.0.12
 
