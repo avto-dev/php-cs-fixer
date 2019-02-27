@@ -11,4 +11,5 @@ return [
     'vendor',
     'public',
     'resources',
+    'node_modules',
 ];
