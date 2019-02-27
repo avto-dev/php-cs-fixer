@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v1.0.13
+
+### Removed
+
+- `node_modules` folder from cs-fix
+
 ## v1.0.12
 
 ### Changed
