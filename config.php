@@ -8,7 +8,7 @@
 
 // Detect project root directory
 $reflector        = new \ReflectionClass('\\Composer\\Autoload\\ClassLoader');
-$project_root_dir = \dirname(\dirname(\dirname($reflector->getFileName()))) . '/';
+$project_root_dir = \dirname(\dirname(\dirname($reflector->getFileName())));
 
 if (! empty($env_cache_file_path = \getenv('PHP_CS_FIX_CACHE_FILE_PATH')) && \is_string($env_cache_file_path)) {
     $cache_file_path = $env_cache_file_path;

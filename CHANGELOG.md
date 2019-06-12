@@ -4,9 +4,36 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v1.0.14
+
+### Changed
+
+- New rules ([configurator](https://mlocati.github.io/php-cs-fixer-configurator)):
+  - `phpdoc_var_annotation_correct_order' => true`
+  - `phpdoc_trim_consecutive_blank_line_separation' => true`
+  - `phpdoc_to_return_type' => false`
+  - `phpdoc_no_empty_return' => false`
+  - `no_trailing_whitespace_in_comment' => false`
+  - `php_unit_test_class_requires_covers' => true`
+  - `php_unit_ordered_covers' => true`
+  - `php_unit_test_case_static_method_calls' => ['call_type' => 'this']`
+  - `php_unit_set_up_tear_down_visibility' => true`
+  - `php_unit_no_expectation_annotation' => true`
+  - `php_unit_namespaced' => true`
+  - `php_unit_mock_short_will_return' => true`
+  - `php_unit_method_casing' => ['case' => 'camel_case']`
+  - `php_unit_fqcn_annotation' => true`
+  - `php_unit_dedicate_assert_internal_type' => true`
+  - `php_unit_dedicate_assert' => true`
+  - `php_unit_construct' => ['assertEquals', 'assertSame', 'assertNotEquals', 'assertNotSame']`
+
+### Fixed
+
+- Application root dir path
+
 ## v1.0.13
 
-### Changes
+### Changed
 
 - `node_modules` added into excludes list
 
