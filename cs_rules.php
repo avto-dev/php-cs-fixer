@@ -148,7 +148,7 @@ return [
         'assertEquals', 'assertSame', 'assertNotEquals', 'assertNotSame',
     ],
 
-    // since v1.0.15
+    // since v1.1.0
     'array_indentation'                                => true,
     'class_attributes_separation'                      => [
         'elements' => ['const', 'method', 'property']
