@@ -4,6 +4,51 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v1.1.0
+
+### Added
+
+- New rules:
+  - `array_indentation => true`
+  - `class_attributes_separation => ['elements => ['const', 'method', 'property']]`
+  - `combine_nested_dirname => true`
+  - `comment_to_phpdoc => true`
+  - `escape_implicit_backslashes => ['double_quoted' => true]`
+  - `explicit_indirect_variable => true`
+  - `explicit_string_variable => true`
+  - `fopen_flag_order => true`
+  - `fopen_flags => ['b_mode' => true]`
+  - `fully_qualified_strict_types => true`
+  - `global_namespace_import => ['import_constants' => false, 'import_functions' => false]`
+  - `lowercase_static_reference => true`
+  - `magic_method_casing => true`
+  - `method_chaining_indentation => true`
+  - `multiline_comment_opening_closing => true`
+  - `native_constant_invocation => ['fix_built_in' => true]`
+  - `native_function_type_declaration_casing => true`
+  - `no_alternative_syntax => true`
+  - `no_unset_cast => true`
+  - `nullable_type_declaration_for_default_null_value => ['use_nullable_type_declaration' => true]`
+  - `phpdoc_line_span => ['const' => 'multi', 'method' => 'multi', 'property' => 'multi']`
+  - `return_assignment => true`
+  - `set_type_to_cast => true`
+  - `simple_to_complex_string_variable => true`
+  - `single_trait_insert_per_statement => false`
+  - `standardize_increment => true`
+  - `static_lambda => true`
+  - `string_line_ending => true`
+  - `native_function_invocation => ['scope' => 'namespaced', 'strict' => false]`
+- Exclude directories:
+  - `deploy`
+  - `docker`
+  - `.gitlab`
+  - `.github`
+  - `docs`
+
+### Changed
+
+- Minimal `friendsofphp/php-cs-fixer` package version now is `^2.16`
+
 ## v1.0.14
 
 ### Changed

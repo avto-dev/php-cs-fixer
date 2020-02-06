@@ -41,7 +41,7 @@ if (\file_exists($autoload = __DIR__ . '/../../autoload.php')) {
 
 // Detect project root directory
 $reflector        = new \ReflectionClass(\Composer\Autoload\ClassLoader::class);
-$project_root_dir = \dirname(\dirname(\dirname($reflector->getFileName()))) . '/';
+$project_root_dir = \dirname($reflector->getFileName(), 3) . '/';
 
 // Try to detect - user pass own config, or not?
 $user_config = null;

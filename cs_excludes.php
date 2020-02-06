@@ -12,4 +12,9 @@ return [
     'public',
     'resources',
     'node_modules',
+    'deploy',
+    'docker',
+    '.gitlab',
+    '.github',
+    'docs',
 ];

@@ -12,4 +12,4 @@ composer.lock
 /temp
 /tmp
 .DS_Store
-.php_cs.cache
+*.cache
