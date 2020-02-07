@@ -151,7 +151,7 @@ return [
     // since v1.1.0
     'array_indentation'                                => true,
     'class_attributes_separation'                      => [
-        'elements' => ['const', 'method', 'property']
+        'elements' => ['const', 'method', 'property'],
     ],
     'combine_nested_dirname'                           => true,
     'comment_to_phpdoc'                                => true,
@@ -187,7 +187,8 @@ return [
     'static_lambda'                                    => false, // breaks down app in `Macroable` trait context
     'string_line_ending'                               => true,
     'native_function_invocation'                       => [
-        'scope' => 'namespaced',
+        'scope'  => 'namespaced',
         'strict' => false,
     ],
+    'php_unit_expectation'                             => 'newest',
 ];

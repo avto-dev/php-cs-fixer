@@ -1,4 +1,7 @@
 * text=auto
 
-/.github export-ignore
-/.*      export-ignore
+/.github      export-ignore
+/[Dd]ocker*   export-ignore
+/.*           export-ignore
+/phpstan.*    export-ignore
+/Makefile     export-ignore
