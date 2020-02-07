@@ -190,5 +190,5 @@ return [
         'scope'  => 'namespaced',
         'strict' => false,
     ],
-    'php_unit_expectation'                             => 'newest',
+    'php_unit_expectation'                             => ['target' => 'newest'],
 ];
