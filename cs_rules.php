@@ -184,7 +184,7 @@ return [
     'simple_to_complex_string_variable'                => true,
     'single_trait_insert_per_statement'                => false,
     'standardize_increment'                            => true,
-    'static_lambda'                                    => true, // risky in closure binding context, be careful
+    'static_lambda'                                    => false, // breaks down app in `Macroable` trait context
     'string_line_ending'                               => true,
     'native_function_invocation'                       => [
         'scope' => 'namespaced',

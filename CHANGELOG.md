@@ -35,7 +35,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
   - `simple_to_complex_string_variable => true`
   - `single_trait_insert_per_statement => false`
   - `standardize_increment => true`
-  - `static_lambda => true`
+  - `static_lambda => false`
   - `string_line_ending => true`
   - `native_function_invocation => ['scope' => 'namespaced', 'strict' => false]`
 - Exclude directories:
