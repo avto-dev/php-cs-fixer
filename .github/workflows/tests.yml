@@ -1,4 +1,4 @@
-name: Execute tests
+name: tests
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
 
 jobs: # Docs: <https://help.github.com/en/articles/workflow-syntax-for-github-actions>
   build:
-    name: Build (php ${{ matrix.php }})
+    name: PHP ${{ matrix.php }}, ${{ matrix.setup }} setup
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false

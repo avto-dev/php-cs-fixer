@@ -45,6 +45,8 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
   - `.gitlab`
   - `.github`
   - `docs`
+- GitHub actions for tests running
+- Docker-based develop environment
 
 ### Changed
 
