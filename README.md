@@ -6,6 +6,7 @@
 
 [![Version][badge_packagist_version]][link_packagist]
 [![Version][badge_php_version]][link_packagist]
+[![Build Status][badge_build]][link_build]
 [![Downloads count][badge_downloads_count]][link_packagist]
 [![License][badge_license]][link_license]
 
@@ -16,7 +17,7 @@
 Require this package with composer using the following command:
 
 ```shell
-$ composer require avto-dev/php-cs-fixer "^1.0"
+$ composer require avto-dev/php-cs-fixer "^1.1"
 ```
 
 > Installed `composer` is required ([how to install composer][getcomposer]).
@@ -101,6 +102,7 @@ If you will find any package errors, please, [make an issue][link_create_issue] 
 
 This is open-sourced software licensed under the [MIT License][link_license].
 
+[badge_build]:https://img.shields.io/github/workflow/status/avto-dev/php-cs-fixer/tests?logo=github
 [badge_packagist_version]:https://img.shields.io/packagist/v/avto-dev/php-cs-fixer.svg?maxAge=180
 [badge_php_version]:https://img.shields.io/packagist/php-v/avto-dev/php-cs-fixer.svg?longCache=true
 [badge_downloads_count]:https://img.shields.io/packagist/dt/avto-dev/php-cs-fixer.svg?maxAge=180
@@ -109,6 +111,8 @@ This is open-sourced software licensed under the [MIT License][link_license].
 [badge_commits_since_release]:https://img.shields.io/github/commits-since/avto-dev/php-cs-fixer/latest.svg?style=flat-square&maxAge=180
 [badge_issues]:https://img.shields.io/github/issues/avto-dev/php-cs-fixer.svg?style=flat-square&maxAge=180
 [badge_pulls]:https://img.shields.io/github/issues-pr/avto-dev/php-cs-fixer.svg?style=flat-square&maxAge=180
+
+[link_build]:https://github.com/avto-dev/php-cs-fixer/actions
 [link_releases]:https://github.com/avto-dev/php-cs-fixer/releases
 [link_packagist]:https://packagist.org/packages/avto-dev/php-cs-fixer
 [link_changes_log]:https://github.com/avto-dev/php-cs-fixer/blob/master/CHANGELOG.md
@@ -117,6 +121,5 @@ This is open-sourced software licensed under the [MIT License][link_license].
 [link_commits]:https://github.com/avto-dev/php-cs-fixer/commits
 [link_pulls]:https://github.com/avto-dev/php-cs-fixer/pulls
 [link_license]:https://github.com/avto-dev/php-cs-fixer/blob/master/LICENSE
-[getcomposer]:https://getcomposer.org/download/
 [getcomposer]:https://getcomposer.org/download/
 [vendor_fixer]:https://github.com/FriendsOfPHP/PHP-CS-Fixer

@@ -11,7 +11,6 @@
  *
  * This source file is subject to the MIT license that is bundled with this source code in the file LICENSE.
  */
-
 global $argv;
 
 // Try to disable xdebug
@@ -41,11 +40,11 @@ if (\file_exists($autoload = __DIR__ . '/../../autoload.php')) {
 
 // Detect project root directory
 $reflector        = new \ReflectionClass(\Composer\Autoload\ClassLoader::class);
-$project_root_dir = \dirname(\dirname(\dirname($reflector->getFileName()))) . '/';
+$project_root_dir = \dirname((string) $reflector->getFileName(), 3) . '/';
 
 // Try to detect - user pass own config, or not?
 $user_config = null;
-for ($i = 0; $i <= \count($argv) - 1; ++$i) {
+for ($i = 0; $i <= \count($argv) - 1; $i++) {
     if (\strpos((string) $argv[$i], '--config') !== false) {
         $user_config = isset($argv[$j = $i + 1])
             ? $argv[$j]
@@ -61,7 +60,7 @@ $input = new \Symfony\Component\Console\Input\ArgvInput($user_config === null
         'fix',
         '--verbose',
         '--config',
-        __DIR__ . '/config.php'
+        __DIR__ . '/config.php',
     ], \array_splice($argv, 1, \count($argv)))
     : null
 );
