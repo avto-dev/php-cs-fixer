@@ -31,3 +31,10 @@ disabled:
   - declare_equal_normalize
   - alpha_ordered_imports
   - single_class_element_per_statement
+
+finder:
+  exclude:
+    - tests
+  name:
+    - "*.php"
+    - "cs-fix"

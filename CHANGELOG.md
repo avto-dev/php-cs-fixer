@@ -38,7 +38,7 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
   - `static_lambda => false`
   - `string_line_ending => true`
   - `native_function_invocation => ['scope' => 'namespaced', 'strict' => false]`
-  - `php_unit_expectation => 'newest'`
+  - `php_unit_expectation => ['target' => '5.6']`
 - Exclude directories:
   - `deploy`
   - `docker`

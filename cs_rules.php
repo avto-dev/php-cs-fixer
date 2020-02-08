@@ -162,6 +162,7 @@ return [
     'fopen_flags'                                      => ['b_mode' => true],
     'fully_qualified_strict_types'                     => true,
     'global_namespace_import'                          => [
+        'import_classes'   => false,
         'import_constants' => false,
         'import_functions' => false,
     ],
@@ -190,5 +191,5 @@ return [
         'scope'  => 'namespaced',
         'strict' => false,
     ],
-    'php_unit_expectation'                             => ['target' => 'newest'],
+    'php_unit_expectation'                             => ['target' => '5.6'],
 ];

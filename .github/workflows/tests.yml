@@ -60,6 +60,9 @@ jobs: # Docs: <https://help.github.com/en/articles/workflow-syntax-for-github-ac
       - name: Execute tests
         run: composer test
 
+      - name: Try to execute
+        run: php ./cs-fix . --dry-run --diff
+
   lint-changelog:
     name: Lint changelog file
     runs-on: ubuntu-latest
