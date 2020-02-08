@@ -22,7 +22,7 @@ Fixer | Value | Description
 `fopen_flag_order` | `true` | Order the flags in `fopen` calls, `b` and `t` must be last
 `fopen_flags` | `['b_mode' => true]` | The flags in `fopen` calls must omit `t`, and `b` must be omitted or included consistently
 `fully_qualified_strict_types` | `true` | Transforms imported FQCN parameters and return types in function arguments to short version
-`global_namespace_import` | `['import_classes' => false, 'import_constants' => false, 'import_functions' => false]` | Imports or fully qualifies global classes/functions/constants
+`global_namespace_import` | `['import_classes' => null, 'import_constants' => false, 'import_functions' => false]` | Imports or fully qualifies global classes/functions/constants
 `lowercase_static_reference` | `true` | Class static references `self`, `static` and `parent` MUST be in lower case
 `magic_method_casing` | `true` | Magic method definitions and calls must be using the correct casing
 `method_chaining_indentation` | `true` | Method chaining MUST be properly indented. Method chaining with different levels of indentation is not supported
