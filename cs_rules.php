@@ -162,7 +162,7 @@ return [
     'fopen_flags'                                      => ['b_mode' => true],
     'fully_qualified_strict_types'                     => true,
     'global_namespace_import'                          => [
-        'import_classes'   => null,
+        'import_classes'   => false,
         'import_constants' => false,
         'import_functions' => false,
     ],
