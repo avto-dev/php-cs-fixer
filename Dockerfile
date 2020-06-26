@@ -1,14 +1,12 @@
-FROM composer:1.8.6 AS composer
-
-FROM php:7.1.3-alpine
+FROM php:7.2.5-alpine
 
 ENV \
     COMPOSER_ALLOW_SUPERUSER="1" \
     COMPOSER_HOME="/tmp/composer"
 
-COPY --from=composer /usr/bin/composer /usr/bin/composer
+COPY --from=composer:1.10.7 /usr/bin/composer /usr/bin/composer
 
-RUN set -xe \
+RUN set -x \
     && apk add --no-cache git \
     && mkdir /src ${COMPOSER_HOME} \
     && composer global require 'hirak/prestissimo' --no-interaction --no-suggest --prefer-dist \
@@ -19,5 +17,3 @@ RUN set -xe \
     && php -m
 
 WORKDIR /src
-
-VOLUME ["/src"]
