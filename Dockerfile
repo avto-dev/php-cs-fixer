@@ -1,10 +1,10 @@
-FROM php:7.2.5-alpine
+FROM php:7.3.5-alpine
 
 ENV \
     COMPOSER_ALLOW_SUPERUSER="1" \
     COMPOSER_HOME="/tmp/composer"
 
-COPY --from=composer:1.10.7 /usr/bin/composer /usr/bin/composer
+COPY --from=composer:1.10.10 /usr/bin/composer /usr/bin/composer
 
 RUN set -x \
     && apk add --no-cache git \
