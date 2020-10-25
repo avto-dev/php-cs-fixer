@@ -28,6 +28,7 @@ jobs: # Docs: <https://help.github.com/en/articles/workflow-syntax-for-github-ac
         with:
           php-version: ${{ matrix.php }}
           extensions: mbstring # definition is required for php 7.4
+          tools: composer:v1 # TODO update composer up to v2
 
       - name: Syntax check only (lint)
         run: find . -type f \( -name "*.php" -o -name "cs-fix" \) -not -path "./vendor*" -print0 | xargs -0 -n1 -P8 php -l
