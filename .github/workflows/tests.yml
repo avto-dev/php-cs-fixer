@@ -13,12 +13,12 @@ on:
 jobs: # Docs: <https://help.github.com/en/articles/workflow-syntax-for-github-actions>
   build:
     name: PHP ${{ matrix.php }}, ${{ matrix.setup }} setup
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     strategy:
       fail-fast: false
       matrix:
         setup: ['basic', 'lowest']
-        php: ['7.2', '7.3', '7.4']
+        php: ['7.2', '7.3', '7.4', '8.0']
     steps:
       - name: Check out code
         uses: actions/checkout@v2
@@ -28,7 +28,6 @@ jobs: # Docs: <https://help.github.com/en/articles/workflow-syntax-for-github-ac
         with:
           php-version: ${{ matrix.php }}
           extensions: mbstring # definition is required for php 7.4
-          tools: composer:v1 # TODO update composer up to v2
 
       - name: Syntax check only (lint)
         run: find . -type f \( -name "*.php" -o -name "cs-fix" \) -not -path "./vendor*" -print0 | xargs -0 -n1 -P8 php -l
@@ -44,16 +43,13 @@ jobs: # Docs: <https://help.github.com/en/articles/workflow-syntax-for-github-ac
           key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.json') }}
           restore-keys: ${{ runner.os }}-composer-
 
-      - name: Install Composer 'hirak/prestissimo' package
-        run: composer global require hirak/prestissimo --update-no-dev
-
       - name: Install lowest Composer dependencies
         if: matrix.setup == 'lowest'
-        run: composer update --prefer-dist --no-interaction --no-suggest --prefer-lowest
+        run: composer update --prefer-dist --no-interaction --prefer-lowest
 
       - name: Install basic Composer dependencies
         if: matrix.setup == 'basic'
-        run: composer update --prefer-dist --no-interaction --no-suggest
+        run: composer update --prefer-dist --no-interaction
 
       - name: Show most important packages versions
         run: composer info | grep -e phpstan/phpstan
@@ -66,7 +62,7 @@ jobs: # Docs: <https://help.github.com/en/articles/workflow-syntax-for-github-ac
 
   lint-changelog:
     name: Lint changelog file
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: Check out code
         uses: actions/checkout@v2
