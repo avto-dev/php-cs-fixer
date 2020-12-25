@@ -6,9 +6,14 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ## UNRELEASED
 
+### Added
+
+- Support PHP `8.x`
+
 ### Changed
 
 - Minimal required PHP version now is `7.2`
+- Composer `2.x` is supported now
 
 ## v1.1.0
 
