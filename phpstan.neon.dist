@@ -5,3 +5,7 @@ parameters:
     - .
   excludes_analyse:
     - ./vendor/*
+  reportUnmatchedIgnoredErrors: false
+  ignoreErrors:
+    - message: '#Parameter \#1 \$callback of function set_error_handler#'
+      paths: [./cs-fix]
