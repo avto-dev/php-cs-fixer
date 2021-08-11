@@ -17,7 +17,7 @@
 Require this package with composer using the following command:
 
 ```shell
-$ composer require avto-dev/php-cs-fixer "^1.1"
+$ composer require avto-dev/php-cs-fixer "^1.3"
 ```
 
 > Installed `composer` is required ([how to install composer][getcomposer]).
