@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## v1.3.0
+
+### Changed
+
+- The version of the package `friendsofphp/php-cs-fixer` has been updated to `^ 3.0`
+
 ## v1.2.0
 
 ### Added
