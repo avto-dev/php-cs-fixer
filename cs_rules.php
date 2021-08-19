@@ -17,7 +17,6 @@ return [
     ],
     'blank_line_after_namespace'                       => true,
     'blank_line_after_opening_tag'                     => true,
-    'blank_line_before_statement'                      => true,
     'cast_spaces'                                      => ['space' => 'single'],
     'combine_consecutive_issets'                       => true,
     'combine_consecutive_unsets'                       => true,
