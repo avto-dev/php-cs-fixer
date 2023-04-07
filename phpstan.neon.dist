@@ -3,7 +3,7 @@ parameters:
   paths:
     - ./cs-fix
     - .
-  excludes_analyse:
+  excludePaths:
     - ./vendor/*
   reportUnmatchedIgnoredErrors: false
   ignoreErrors:

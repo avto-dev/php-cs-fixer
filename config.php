@@ -34,10 +34,7 @@ $config
     ->setUsingCache(true)
     ->setRules(\file_exists($user_rules = $project_root_dir . '/.cs_rules.php')
         ? \array_replace_recursive($rules, require $user_rules)
-        : $rules);
-
-if (! empty($cache_file_path)) {
-    $config->setCacheFile($cache_file_path);
-}
+        : $rules)
+    ->setCacheFile($cache_file_path);
 
 return $config;
