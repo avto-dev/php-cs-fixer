@@ -7,7 +7,7 @@
  * @see https://mlocati.github.io/php-cs-fixer-configurator/
  */
 return [
-    '@PSR2'                                            => true,
+    '@PSR12'                                           => true,
     '@PHP71Migration'                                  => true,
     'binary_operator_spaces'                           => [
         'operators' => [
@@ -45,13 +45,12 @@ return [
     'no_leading_import_slash'                          => true,
     'no_leading_namespace_whitespace'                  => true,
     'no_multiline_whitespace_around_double_arrow'      => true,
-    'no_trailing_comma_in_singleline_array'            => true,
+    'no_trailing_comma_in_singleline'                  => true,
     'no_null_property_initialization'                  => true,
     'no_spaces_after_function_name'                    => true,
     'no_short_bool_cast'                               => true,
     'no_singleline_whitespace_before_semicolons'       => true,
     'no_spaces_around_offset'                          => true,
-    'no_trailing_comma_in_list_call'                   => true,
     'no_unused_imports'                                => true, // Эта сюка глючила
     'no_whitespace_in_blank_line'                      => true,
     'no_useless_else'                                  => true,
@@ -140,7 +139,11 @@ return [
     // since v1.1.0
     'array_indentation'                                => true,
     'class_attributes_separation'                      => [
-        'elements' => ['const' => 'one', 'method' => 'one', 'property' => 'one'],
+        'elements' => [
+            'const'    => 'only_if_meta',
+            'method'   => 'one',
+            'property' => 'one',
+        ],
     ],
     'combine_nested_dirname'                           => true,
     'comment_to_phpdoc'                                => true,
@@ -181,4 +184,17 @@ return [
         'strict' => false,
     ],
     'php_unit_expectation'                             => ['target' => '5.6'],
+
+    // since v1.4.0
+    'single_class_element_per_statement'               => [
+        'elements' => [
+            'const',
+            'property',
+        ],
+    ],
+    'no_multiple_statements_per_line'                  => true,
+    'single_space_around_construct'                    => true,
+    'multiline_whitespace_before_semicolons'           => [
+        'strategy' => 'no_multi_line',
+    ],
 ];

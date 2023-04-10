@@ -6,10 +6,28 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ## Unreleased
 
+### Added
+
+- New rules:
+
+| Fixer                                    | Value                                                                                                                                       | Description                                                                                                               |
+|------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| `no_trailing_comma_in_singleline`        | `true`                                                                                                                                      | If a list of values separated by a comma is contained on a single line, then the last item MUST NOT have a trailing comma |
+| `single_class_element_per_statement`     | `['elements' => ['const', 'property']]`                                                                                                     | There MUST NOT be more than one property or constant declared per statement                                               |
+| `no_multiple_statements_per_line`        | `true`                                                                                                                                      | There must not be more than one statement per line                                                                        |
+| `single_space_around_construct`          | `['constructs_contain_a_single_space' => [], 'constructs_followed_by_a_single_space' => [], 'constructs_preceded_by_a_single_space' => []]` | Ensures a single space after language constructs                                                                          |
+| `multiline_whitespace_before_semicolons` | `['strategy' => 'no_multi_line']`                                                                                                           | Forbid multi-line whitespace before the closing semicolon or move the semicolon to the new line for chained calls         |
+
+
 ### Changed
 
 - Minimal required PHP version now is `8.0`
 - Minimal version of the package `friendsofphp/php-cs-fixer` now is `v3.16.0`
+- Rule set `@PSR12` instead of `@PSR2`
+
+### Removed
+
+- Deprecated rules `no_trailing_comma_in_singleline_array` and `no_trailing_comma_in_list_call`
 
 ## v1.3.0
 
