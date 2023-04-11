@@ -18,7 +18,6 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 | `single_space_around_construct`          | `['constructs_contain_a_single_space' => [], 'constructs_followed_by_a_single_space' => [], 'constructs_preceded_by_a_single_space' => []]` | Ensures a single space after language constructs                                                                          |
 | `multiline_whitespace_before_semicolons` | `['strategy' => 'no_multi_line']`                                                                                                           | Forbid multi-line whitespace before the closing semicolon or move the semicolon to the new line for chained calls         |
 
-
 ### Changed
 
 - Minimal required PHP version now is `8.0`

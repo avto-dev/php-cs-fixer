@@ -25,11 +25,13 @@ $excludes = require __DIR__ . '/cs_excludes.php';
 $config   = new \PhpCsFixer\Config('Avto Develops Code Style Fixer');
 
 $config
-    ->setFinder(PhpCsFixer\Finder::create()
-    ->exclude(\file_exists($user_excludes = $project_root_dir . '/.cs_excludes.php')
-        ? \array_replace_recursive($excludes, require $user_excludes)
-        : $excludes)
-    ->in($project_root_dir))
+    ->setFinder(
+        PhpCsFixer\Finder::create()
+            ->exclude(\file_exists($user_excludes = $project_root_dir . '/.cs_excludes.php')
+                ? \array_replace_recursive($excludes, require $user_excludes)
+                : $excludes)
+            ->in($project_root_dir)
+    )
     ->setRiskyAllowed(true)
     ->setUsingCache(true)
     ->setRules(\file_exists($user_rules = $project_root_dir . '/.cs_rules.php')
