@@ -102,7 +102,7 @@ If you will find any package errors, please, [make an issue][link_create_issue] 
 
 This is open-sourced software licensed under the [MIT License][link_license].
 
-[badge_build]:https://img.shields.io/github/workflow/status/avto-dev/php-cs-fixer/tests?logo=github
+[badge_build]:https://img.shields.io/github/actions/workflow/status/avto-dev/php-cs-fixer/tests.yml
 [badge_packagist_version]:https://img.shields.io/packagist/v/avto-dev/php-cs-fixer.svg?maxAge=180
 [badge_php_version]:https://img.shields.io/packagist/php-v/avto-dev/php-cs-fixer.svg?longCache=true
 [badge_downloads_count]:https://img.shields.io/packagist/dt/avto-dev/php-cs-fixer.svg?maxAge=180
