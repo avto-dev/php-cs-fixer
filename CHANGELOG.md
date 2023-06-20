@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Changed
+
+- `single_blank_line_before_namespace` has been replaced with `blank_lines_before_namespace` according base package issue. [#7053]
+
+[#7053]:https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/pull/7053
+
 ## v1.4.0
 
 ### Added
