@@ -4,11 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
-## Unreleased
+## v1.5.0
 
 ### Changed
 
-- `single_blank_line_before_namespace` has been replaced with `blank_lines_before_namespace` according base package issue. [#7053]
+- `single_blank_line_before_namespace` has been replaced with `blank_lines_before_namespace` according base package issue [#7053]
+- Minimal version of the package `friendsofphp/php-cs-fixer` now is `v3.18.0`
 
 [#7053]:https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/pull/7053
 
