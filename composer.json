@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": "^8.0",
-        "friendsofphp/php-cs-fixer": "^v3.16.0"
+        "friendsofphp/php-cs-fixer": "^v3.18.0"
     },
     "require-dev": {
         "phpstan/phpstan": "^1.10"
