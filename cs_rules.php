@@ -87,6 +87,7 @@ return [
     'single_line_comment_style'                        => true,
     'single_blank_line_at_eof'                         => true,
     'blank_lines_before_namespace'                     => true,
+    'single_blank_line_before_namespace'               => false, // deprecated
     'single_line_after_imports'                        => true,
     'single_quote'                                     => true,
     'space_after_semicolon'                            => true,
