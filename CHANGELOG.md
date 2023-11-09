@@ -4,6 +4,28 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- New rules instead of deprecated [#14]
+  - `compact_nullable_type_declaration: true`
+  - `type_declaration_spaces: true`
+  - `native_type_declaration_casing: true`
+
+### Changed
+
+- `friendsofphp/php-cs-fixer` has been updated to `^ 3.32.0`
+
+### Removed
+
+- Deprecated rule `compact_nullable_typehint` [#14]
+- Deprecated rule `function_typehint_space` [#14]
+- Deprecated rule `single_blank_line_before_namespace` [#14]
+- Deprecated rule `native_function_type_declaration_casing` [#14]
+
+[#14]:https://github.com/avto-dev/php-cs-fixer/issues/14
+
 ## v1.5.0
 
 ### Changed
