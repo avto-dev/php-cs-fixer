@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Changed
+
+- Use `compact_nullable_type_declaration` rule instead of deprecated `compact_nullable_typehint`
+- Use `string_implicit_backslashes` rule instead of deprecated `escape_implicit_backslashes`
+- Use `type_declaration_spaces` rule instead of deprecated `function_typehint_space`
+- Use `native_type_declaration_casing` rule instead of deprecated `native_function_type_declaration_casing`
+
+### Removed
+
+- Deprecated rule `single_blank_line_before_namespace`
+
 ## v1.5.0
 
 ### Changed
