@@ -7,7 +7,7 @@
  */
 
 // Detect project root directory
-$reflector        = new \ReflectionClass('\\Composer\\Autoload\\ClassLoader');
+$reflector        = new \ReflectionClass('\Composer\Autoload\ClassLoader');
 $project_root_dir = \dirname((string) $reflector->getFileName(), 3);
 
 if (! empty($env_cache_file_path = \getenv('PHP_CS_FIX_CACHE_FILE_PATH')) && \is_string($env_cache_file_path)) {
@@ -26,7 +26,7 @@ $config   = new \PhpCsFixer\Config('Avto Develops Code Style Fixer');
 
 $config
     ->setFinder(
-        PhpCsFixer\Finder::create()
+        \PhpCsFixer\Finder::create()
             ->exclude(\file_exists($user_excludes = $project_root_dir . '/.cs_excludes.php')
                 ? \array_replace_recursive($excludes, require $user_excludes)
                 : $excludes)

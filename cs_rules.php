@@ -26,10 +26,7 @@ return [
     'declare_equal_normalize'                          => ['space' => 'single'],
     'dir_constant'                                     => true,
     'encoding'                                         => true,
-    'type_declaration_spaces'                          => [
-        'function',
-        'property',
-    ],
+    'type_declaration_spaces'                          => ['elements' => ['function', 'property']],
     'include'                                          => true,
     'line_ending'                                      => true,
     'linebreak_after_opening_tag'                      => true,
@@ -155,7 +152,7 @@ return [
     'explicit_string_variable'                         => true,
     'fopen_flag_order'                                 => true,
     'fopen_flags'                                      => ['b_mode' => true],
-    'fully_qualified_strict_types'                     => true,
+    'fully_qualified_strict_types'                     => ['leading_backslash_in_global_namespace' => true],
     'global_namespace_import'                          => [
         'import_classes'   => false,
         'import_constants' => false,
@@ -169,7 +166,7 @@ return [
     'native_type_declaration_casing'                   => true,
     'no_alternative_syntax'                            => true,
     'no_unset_cast'                                    => true,
-    'nullable_type_declaration_for_default_null_value' => ['use_nullable_type_declaration' => true],
+    'nullable_type_declaration_for_default_null_value' => true,
     'phpdoc_line_span'                                 => [
         'const'    => 'multi',
         'method'   => 'multi',
