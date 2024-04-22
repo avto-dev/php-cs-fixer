@@ -8,8 +8,8 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Changed
 
-- Use `compact_nullable_type_declaration` rule instead of deprecated `compact_nullable_typehint`
 - Use `string_implicit_backslashes` rule instead of deprecated `escape_implicit_backslashes`
+- Use `compact_nullable_type_declaration` rule instead of deprecated `compact_nullable_typehint`
 - Use `type_declaration_spaces` rule instead of deprecated `function_typehint_space`
 - Use `native_type_declaration_casing` rule instead of deprecated `native_function_type_declaration_casing`
 
