@@ -147,7 +147,6 @@ return [
     ],
     'combine_nested_dirname'                           => true,
     'comment_to_phpdoc'                                => true,
-    'string_implicit_backslashes'                      => ['double_quoted' => 'escape'],
     'explicit_indirect_variable'                       => true,
     'explicit_string_variable'                         => true,
     'fopen_flag_order'                                 => true,
