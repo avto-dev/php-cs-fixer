@@ -8,7 +8,9 @@ The format is based on [Keep a Changelog][keepachangelog] and this project adher
 
 ### Fixed
 
-- Default argument for `Symfony\Component\Console\Input\ArgvInput` class in `cs-fix` file
+- Default argument for `Symfony\Component\Console\Input\ArgvInput` class in `cs-fix` file [#21]
+
+[#21]:https://github.com/avto-dev/php-cs-fixer/issues/21
 
 ## v1.6.0
 
