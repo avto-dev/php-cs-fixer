@@ -56,7 +56,7 @@ for ($i = 0; $i <= \count($argv) - 1; $i++) {
 // Initialize input arguments object
 $input = new \Symfony\Component\Console\Input\ArgvInput($user_config === null
     ? \array_merge([
-        null,
+        'php-cs-fixer',
         'fix',
         '--verbose',
         '--config',

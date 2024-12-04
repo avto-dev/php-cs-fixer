@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Fixed
+
+- Default argument for `Symfony\Component\Console\Input\ArgvInput` class in `cs-fix` file [#22]
+
+[#22]:https://github.com/avto-dev/php-cs-fixer/pull/22
+
 ## v1.6.0
 
 ### Changed
