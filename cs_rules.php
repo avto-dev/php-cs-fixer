@@ -8,7 +8,7 @@
  */
 return [
     '@PSR12'                                           => true,
-    '@PHP71Migration'                                  => true,
+    '@PHP7x1Migration'                                 => true,
     'binary_operator_spaces'                           => [
         'operators' => [
             '='  => 'align_single_space',
