@@ -7,9 +7,9 @@
  * @see https://mlocati.github.io/php-cs-fixer-configurator/
  */
 return [
-    '@PSR12'                                           => true,
-    '@PHP71Migration'                                  => true,
-    'binary_operator_spaces'                           => [
+    '@PSR12'                                            => true,
+    '@PHP7x1Migration'                                  => true,
+    'binary_operator_spaces'                            => [
         'operators' => [
             '='  => 'align_single_space',
             '=>' => 'align_single_space',
@@ -97,7 +97,7 @@ return [
     'unary_operator_spaces'                            => true,
     'void_return'                                      => true,
     'ternary_to_null_coalescing'                       => true,
-    'visibility_required'                              => true,
+    'modifier_keywords'                                => ['elements' => ['const', 'method', 'property']],
     'whitespace_after_comma_in_array'                  => true,
     'ordered_imports'                                  => [
         'sort_algorithm' => 'length',
