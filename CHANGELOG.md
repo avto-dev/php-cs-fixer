@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Changed
+
+- Use `PHP7x1Migration` rule instead of deprecated `PHP71Migration`
+- Use `modifier_keywords` rule instead of deprecated `visibility_required`
+- Minimal version of the package `friendsofphp/php-cs-fixer` now is `v3.90`
+
+### Removed
+
+- Obsolete `version` in `docker-compose.yml`
+
 ## v1.6.1
 
 ### Fixed
