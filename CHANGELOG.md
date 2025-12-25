@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][keepachangelog] and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+### Added
+
+- Possibility to set only `->in()` directories via `.cs_includes.php`
+
 ## v1.6.1
 
 ### Fixed

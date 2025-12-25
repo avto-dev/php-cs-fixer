@@ -30,7 +30,9 @@ $config
             ->exclude(\file_exists($user_excludes = $project_root_dir . '/.cs_excludes.php')
                 ? \array_replace_recursive($excludes, require $user_excludes)
                 : $excludes)
-            ->in($project_root_dir)
+            ->in(\file_exists($user_includes = $project_root_dir . '/.cs_includes.php')
+                ? require $user_includes
+                : $project_root_dir)
     )
     ->setRiskyAllowed(true)
     ->setUsingCache(true)
